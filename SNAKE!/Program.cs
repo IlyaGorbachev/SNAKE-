@@ -10,7 +10,6 @@ namespace SNAKE_
             int mon = 1;
             //Меню
             Console.WriteLine("Press any key...");
-            ConsoleKey key_ = ConsoleKey.UpArrow;
             
             //Создаем объекты
             Area pole = new Area();
@@ -37,8 +36,7 @@ namespace SNAKE_
                 
                 while (true)
                 {
-
-                    //    key_ = Console.ReadKey(Console.KeyAvailable).Key;
+                    
                     if(Console.KeyAvailable == true)
                     {
                        player.Movem(Console.ReadKey(Console.KeyAvailable).Key, ref mon);
@@ -68,7 +66,7 @@ namespace SNAKE_
                 pole.Kadr();     
                 pole.Fill("X");
                 pole.Size[player.xCoordinate, player.yCoordinate] = player.Skin + " ";
-                Thread.Sleep(50);
+                Thread.Sleep(20);
                 
             }
   

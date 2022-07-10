@@ -20,10 +20,10 @@ public class Snake
 		*/
 		switch (key)
 		{
-			case ConsoleKey.UpArrow: Num = 1; break;
-			case ConsoleKey.DownArrow: Num = 2; break;
-			case ConsoleKey.LeftArrow: Num = 3; break;
-			case ConsoleKey.RightArrow: Num = 4; break;
+			case ConsoleKey.UpArrow : if (Num != 2) { Num = 1; }; break;
+			case ConsoleKey.DownArrow: if (Num != 1) { Num = 2; }; break;
+			case ConsoleKey.LeftArrow: if (Num != 4) { Num = 3; }; break;
+			case ConsoleKey.RightArrow: if (Num != 3) { Num = 4; }; break;
 		}
 
 		
