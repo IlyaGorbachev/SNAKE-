@@ -5,6 +5,8 @@ public class Snake
 {
 	public int xCoordinate;
 	public int yCoordinate;
+	public int size = 3;
+	public int score = 0;
 	public string Skin = "o";
 	//Метод для движения змеи
 	public void Movem(ConsoleKey key, ref int Num)

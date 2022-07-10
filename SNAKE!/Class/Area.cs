@@ -55,6 +55,7 @@ public class Area
             Console.WriteLine();
         }
         Console.SetCursorPosition(0, 1);
+        
     }
 }
 
