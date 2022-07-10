@@ -42,6 +42,7 @@ public class Area
 
     }
 
+    //Метод отрисовки кадра
     public void Kadr()
     {
         for(int i=0; i<Height; i++)

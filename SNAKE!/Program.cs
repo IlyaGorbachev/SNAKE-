@@ -5,7 +5,7 @@ namespace SNAKE_
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //Меню
             Console.WriteLine("Press any key...");
@@ -29,8 +29,7 @@ namespace SNAKE_
             
             snake.Start();
 
-           
-
+            //Поток расчета положения змеи
             void SnakeMath()
             {
                 while (true)
@@ -38,15 +37,16 @@ namespace SNAKE_
 
                     key_ = Console.ReadKey(Console.KeyAvailable).Key;
                     player.Movem(key_);
-                   
-                    
+                    Thread.Sleep(400);
+
                 }
             }
 
+            //Основной поток
             while (true)
             {
+                
                 pole.Kadr();
-                Thread.Sleep(30);
                 pole.Fill("X");
                 pole.Size[player.xCoordinate, player.yCoordinate] = player.Skin + " ";
                 Thread.Sleep(30);
