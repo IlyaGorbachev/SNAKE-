@@ -9,6 +9,7 @@ namespace SNAKE_
         static void Main(string[] args)
         {
             int mon = 1;
+            int time = 400;
             //Меню
             Console.WriteLine("Press any key...");
             
@@ -62,7 +63,7 @@ namespace SNAKE_
                         case 3: player.yCoordinate--; break;
                         case 4: player.yCoordinate++; break;
                     }
-                    Thread.Sleep(400);
+                    Thread.Sleep(time);
 
                     
                 }
@@ -90,6 +91,7 @@ namespace SNAKE_
                     food.Generation(Area.Width, Area.Height);
                     pole.Size[food.xCoordinate, food.yCoordinate] = food.skin + " ";
                     player.score++;
+                    time = time - 4;
                 }
                 Thread.Sleep(20);
                 
