@@ -82,7 +82,7 @@ namespace SNAKE_
 
                 }
                 pole.Kadr();
-                pole.Fill("X");
+                pole.Fill("☻");
                 Console.WriteLine("Score: " + player.score.ToString());
                 pole.Size[food.xCoordinate, food.yCoordinate] = food.skin + " ";
                 pole.Size[player.xCoordinate, player.yCoordinate] = player.Skin + " ";

@@ -8,7 +8,7 @@ namespace SNAKE_.Class
     {
         public int xCoordinate = 5;
         public int yCoordinate = 5;
-        public string skin = "G";
+        public string skin = "O";
 
         Random rnd = new Random();
 

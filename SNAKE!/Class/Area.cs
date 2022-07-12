@@ -3,10 +3,10 @@
 
 public class Area
 {
-    public static int Width = 16;
-    public static int Height = 16;
+    public static int Width = 25;
+    public static int Height = 25;
     public string[,] Size = new string[Width, Height];
-    public string Napoln = " "; 
+    public string Napoln = "."; 
 
     //Метод заливки массива данными
     public void Fill(string Stena)
